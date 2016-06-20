@@ -1,0 +1,32 @@
+
+.navbar-inverse {
+    border-color: #02B7D6;
+    background-color: #550000;
+    height: 5.625em;
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #801515;
+    // background-color: #d46a6a;
+    background-image: url("http://www.transparenttextures.com/patterns/black-scales.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+label {
+  color: #D46A6A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+}
+
+li {
+  color: #fff;
+}
+
+.form-control {
+  background-color: #D46A6A;
+  border-color: #D46A6A;
+}
