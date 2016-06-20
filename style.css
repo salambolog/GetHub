@@ -1,7 +1,4 @@
-
 .navbar-inverse {
-    border-color: #02B7D6;
-    background-color: #550000;
     height: 5.625em;
 }
 
@@ -11,22 +8,36 @@ body {
     line-height: 1.42857143;
     color: #333;
     background-color: #801515;
-    // background-color: #d46a6a;
     background-image: url("http://www.transparenttextures.com/patterns/black-scales.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 label {
-  color: #D46A6A;
-  font-family: 'Roboto', sans-serif;
-  font-size: 3em;
+    color: #D46A6A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
 }
 
 li {
-  color: #fff;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.7em;
+  font-family: georgia;
 }
 
 .form-control {
-  background-color: #D46A6A;
-  border-color: #D46A6A;
+    background-color: #D46A6A;
+    border-color: #D46A6A;
+}
+
+.curtains {
+    position: relative;
 }
