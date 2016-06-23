@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>.GetHUb</title>
-  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>.GetHUb</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="jquery.min.js"></script>
 </head>
-<body>
-<nav class="navbar-inverse">
-<p style="font-size: 2.3em; font-family: 'impact'; color: #DC5555; margin-left: 20px; padding-top: 10px;">Gethub</p>
-</nav>
-<div class="container" ng-app="App">
-  <div ng-controller="Controller">
-    <div class="form-group">
-      <label for=""><h1><strong>Insert</strong> Github Username</h1></label>
-      <input type="text" class="form-control" ng-model="username"></input>
+
+<body ng-app="App">
+    <nav class="navbar-inverse">
+        <p style="font-size: 2.3em; font-family: 'impact'; color: #DC5555; margin-left: 20px; padding-top: 10px;">Gethub</p>
+    </nav>
+    <div class="container" ng-app="App">
+        <div ng-controller="Controller">
+            <div class="form-group">
+                <label for="">
+                    <h1><strong>Insert</strong> Github Username</h1></label>
+                <form ng-submit="getUser()">
+                    <input type="text" class="form-control" ng-model="user" value="Search"></input>
+                </form>
+            </div>
+            <ul>
+                <li ng-repeat="data in res">
+                    <p>Name: {{data.name}}</p>
+                    <p>Company: {{data.company}}</p>
+                    <p>Public repos: {{data.public_repos}} </p>
+                </li>
+            </ul>
+        </div>
     </div>
-    <ul>
-      <li ng-repeat="event in events">
-      {{event.actor.login}} - {{event.repo.name}}
-      </li>
-    </ul>
-  </div>
-</div>
 
 
-<script src="node_modules/angular/angular.js"></script>
-<script src="controller.js"></script>
-<script type="app.js"></script>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/controller.js"></script>
 </body>
+
 </html>
