@@ -1,10 +1,11 @@
-var app = angular.module('App', []);
-app.controller('Controller', function($scope, $http) {
-    $scope.user = 'Enter name';
-    $scope.getUser = function(err, res) {
-        $http.get('https://api.github.com/users/' + $scope.user).then(function(res) {
-            $scope.res = res;
-            console.log($scope.res);
+angular.module('App', []).controller('Controller',
+function Controller($http) {
+    var vm = this;
+    vm.user = 'Gusbenz';
+    vm.getUser = function() {
+        $http.get('https://api.github.com/users/' + vm.user).then(function(data) {
+            vm.results = data;
+            console.log(vm.results);
         });
     };
 });
