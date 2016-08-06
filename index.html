@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>.GetHUb</title>
+  <title>.GetHub</title>
   <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="animate.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="jquery.min.js"></script>
 </head>
 <body>
-<nav class="navbar-inverse">
-<p style="font-size: 2.3em; font-family: 'impact'; color: #DC5555; margin-left: 20px; padding-top: 10px;">Gethub</p>
-</nav>
+<!-- <nav class="navbar-inverse"> -->
+<p class="navType animated fadeInDown">.Gethub<img src="GetHUB.png"></p>
+<div class="bar">
+<h1 class="advert animated zoomInRight" style='margin-left: 40px;'>This Application is a simple <strong>API</strong></h1>
+<!-- </nav> -->
 <div class="container" ng-app="App">
   <div ng-controller="Controller">
+ </div>
     <div class="form-group">
-      <label for=""><h1><strong>Insert</strong> Github Username</h1></label>
+      <label for=""><h1 class="animated fadeInUp"><span style="font-family: OpenSans-ExtraBold; margin-right: 9px;"><strong>Type</strong></span>A Github username</h1></label>
       <input type="text" class="form-control" ng-model="username"></input>
     </div>
     <ul>

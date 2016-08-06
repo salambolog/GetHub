@@ -1,43 +1,95 @@
+@font-face {
+    font-family: Gotham-Rounded-Light;
+    src: url(Gotham-Rounded-Light.ttf), (Gotham-Rounded-Bold.ttf) (OpenSans-ExtraBold.ttf);
+    src: local('Gotham-Rounded-Light'), local('Gotham'), url(Gotham-Rounded-Bold.ttf) format('truetype'), url('Gotham-Rounded-Bold.ttf') local('Gotham'), url(Gotham-Rounded-Light.ttf) format('truetype'), local('OpenSans-ExtraBold'), local('OpenSansBold'), url('OpenSans-ExtraBold.ttf') local('OpenSansBold'), url(OpenSans-ExtraBold.ttf) format('truetype');
+}
+
 .navbar-inverse {
-    height: 5.625em;
+    height: 3em;
+    position: fixed;
+    /* IE10+ */
+    background-image: -ms-radial-gradient(center, ellipse closest-side, #3A3A3C 0%, #2C2C2E 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-radial-gradient(center, ellipse closest-side, #3A3A3C 0%, #2C2C2E 100%);
+    /* Opera */
+    background-image: -o-radial-gradient(center, ellipse closest-side, #3A3A3C 0%, #2C2C2E 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(radial, center center, 0, center center, 125, color-stop(0, #3A3A3C), color-stop(100, #2C2C2E));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-radial-gradient(center, ellipse closest-side, #3A3A3C 0%, #2C2C2E 100%);
+    /* W3C Markup */
+    background-image: radial-gradient(ellipse closest-side at center, #3A3A3C 0%, #2C2C2E 100%);
+}
+
+.navType {
+    font-family: 'OpenSans-ExtraBold';
+    font-size: 48px;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding-right: 10px;
+    color: white;
+    text-shadow: 0 4px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 body {
-    font-family: "Roboto";
-    font-size: 14px;
+    font-family: 'Roboto';
     line-height: 1.42857143;
-    color: #333;
-    background-color: #801515;
-    background-image: url("http://www.transparenttextures.com/patterns/black-scales.png");
+    color: #ED1C24;
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    background: #3A3A3C;
+}
+
+.advert {
+    font-family: 'OpenSans-ExtraBold';
+    font-size: 38px;
+    margin-left: 15px;
+    text-shadow: 0 4px 0 #712828, 0 2px 0 #712828, 0 3px 0 #712828, 0 4px 0 #712828, 0 5px 0 #712828, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+}
+
+img {
+    height: 250px;
+    float: right;
 }
 
 label {
-    color: #D46A6A;
+    color: #ccc;
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
+}
+
+h1 {
+    margin-left: -30px;
 }
 
 li {
     color: #fff;
     text-decoration: none;
+    font-family: 'OpenSans-ExtraBold';
 }
 
 ul {
-  list-style: none;
-  font-size: 1.7em;
-  font-family: georgia;
+    list-style: none;
+    font-size: 1.3em;
+    font-family: georgia;
+    margin-top: 12px;
 }
 
 .form-control {
-    background-color: #D46A6A;
-    border-color: #D46A6A;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 35px;
+    float: left;
 }
 
 .curtains {
     position: relative;
+}
+
+.bar {
+    background: #F66867;
+    width: 100%;
 }
