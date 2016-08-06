@@ -23,7 +23,7 @@
       <input type="text" class="form-control" ng-model="username"></input>
     </div>
     <ul>
-      <li ng-repeat="event in events">
+      <li ng-repeat="event in events" class="ng-cloak">
       {{event.actor.login}} - {{event.repo.name}}
       </li>
     </ul>
