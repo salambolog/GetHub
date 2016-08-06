@@ -92,4 +92,5 @@ ul {
 .bar {
     background: #F66867;
     width: 100%;
+    border-top: 5px solid #B33938;
 }
