@@ -2,13 +2,13 @@ angular.module('Services', [])
       .factory('githubService', function($http){
 
           var runUserRequest = function(username) {
-           return $http({
-              method :'JSONP',
-              url    : 'https://api.github.com/users/'+username+'/events?callback=JSON_CALLBACK'
-            })
+               return $http({
+                  method:'JSONP',
+                  url: 'https://api.github.com/users/'+username+'/events?callback=JSON_CALLBACK'
+                })
           };
           return {
-            event : function(username){
+            event: function(username){
               return runUserRequest(username);
             }
           }
@@ -25,6 +25,7 @@ angular.module('Services', [])
                 if(timeout) $timeout.cancel(timeout);
 
                 timeout = $timeout(function(){
+
                   githubService.event(newUsername).success(function(data,status){
                     console.log('success');
                     console.log(data);
