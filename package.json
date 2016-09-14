@@ -19,6 +19,7 @@
     "angularjs": "0.0.1",
     "connect": "^3.5.0",
     "ejs": "^2.4.1",
+    "everyauth": "^0.4.9",
     "express": "^4.14.0",
     "foreman": "^2.0.0",
     "mocha": "^3.0.2"
