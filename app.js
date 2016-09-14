@@ -1,11 +1,10 @@
 var express = require('express');
+var app = express();
 var http = require('http');
 var https = require('https');
-var path = require("path");
 var connect = require('connect');
 var everyauth = require('everyauth');
-
-var app = express();
+var path = require("path");
 
 
 app.use(express.static(path.join(__dirname, 'public')));
