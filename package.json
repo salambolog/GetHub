@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm start",
+    "test": "mocha",
     "start": "node app.js"
   },
   "engines": {
@@ -20,6 +20,7 @@
     "connect": "^3.5.0",
     "ejs": "^2.4.1",
     "express": "^4.14.0",
-    "foreman": "^2.0.0"
+    "foreman": "^2.0.0",
+    "mocha": "^3.0.2"
   }
 }
