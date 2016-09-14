@@ -4,6 +4,7 @@ var http = require('http');
 var https = require('https');
 var connect = require('connect');
 var everyauth = require('everyauth');
+var path = require("path");
 
 
 app.use(express.static(path.join(__dirname, 'public')));
