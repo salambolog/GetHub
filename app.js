@@ -6,7 +6,9 @@ var connect = require('connect');
 var everyauth = require('everyauth');
 var path = require("path");
 
-app.listen(process.env.PORT || 5080);
+// app.listen(process.env.PORT || 5080);
+
+app.listen(process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
 

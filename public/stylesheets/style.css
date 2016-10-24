@@ -58,7 +58,7 @@ img {
 label {
     color: #ccc;
     font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-size: 2.7em;
 }
 
 h1 {
@@ -83,6 +83,11 @@ ul {
     border-color: #fff;
     border-radius: 35px;
     float: left;
+    margin-top: 1.4%;
+    margin-left: 3%;
+    margin-right: 2%;
+    height: 2em;
+    width: 18em;
 }
 
 .curtains {
